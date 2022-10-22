@@ -564,50 +564,28 @@ footer {
 /* END FINISHING */
 
 /* RESPONSIVE */
-@media screen and (min-width: 576px) {
-}
-
-/* testing */
-/* .slider section {
-	width: 40%;
-	/* background-color: salmon; 
-
-
-.container .container-slider-fav {
-	width: 20%;
-}
-
-.carousel {
-	position: relative;
-}
-
-.slider {
-	display: flex;
-	width: 200%;
-	border: 1px solid red;
-	transition: all 0.3s ease;
-}
-
-.slider section {
-	flex-basis: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.controls .arrow {
-	position: absolute;
-	top: 50%;
+.ham-menu {
 	cursor: pointer;
-	border: 2px solid salmon;
+	display: block;
 }
+.ham-menu .bar {
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: black;
+}
+@media screen and (max-width: 768px) {
+	.ham-menu {
+		display: block;
+	}
 
-.arrow.left {
-	left: 10px;
+	.ham-menu.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.ham-menu.active .bar:nth-child(2) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
 }
-
-.arrow.right {
-	right: 10px;
-}
- 
-/* END TESTING */
+/* END RESPONSIVE */
