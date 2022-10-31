@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+html,
+body {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 	color: rgb(61, 61, 61);
@@ -35,7 +40,6 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	width: 200px;
-	/* border: 1px solid salmon; */
 	padding: 0 16px 0 16px;
 }
 
@@ -354,7 +358,7 @@ a {
 }
 
 .bev-content .nama-harga {
-	width: 90px;
+	width: 170px;
 	font-size: 13px;
 	margin: 0px auto;
 	text-align: center;
@@ -564,28 +568,94 @@ footer {
 /* END FINISHING */
 
 /* RESPONSIVE */
-.ham-menu {
-	cursor: pointer;
-	display: block;
+.hamburger-menu {
+	display: none;
 }
-.ham-menu .bar {
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-color: black;
+
+.cart {
+	display: none;
 }
-@media screen and (max-width: 768px) {
-	.ham-menu {
+
+/* HUMBURGER MENU */
+@media screen and (max-width: 576px) {
+	.link,
+	.icon-soc {
+		display: none;
+	}
+
+	.hamburger-menu {
 		display: block;
 	}
 
-	.ham-menu.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
+	.container-nav {
+		justify-content: space-between;
+		padding: 5px 35px 0 26px;
 	}
-	.ham-menu.active .bar:nth-child(2) {
-		transform: translateY(-8px) rotate(-45deg);
+
+	.logo-profile {
+		width: 220px;
+		padding: 0px 8px 0px 0px;
+	}
+
+	.logo-profile .image img {
+		width: 50px;
+	}
+
+	.logo-profile .name h4 {
+		/* font-size: 13px; */
+		margin: 0px 0px 0px -45px;
+	}
+
+	.container-cover {
+		margin-top: 66px;
+	}
+
+	.img-logo-sampul {
+		width: 127px;
+	}
+
+	.text-1 {
+		font-size: 10.5px;
+		width: 270px;
+	}
+
+	.container-slider-fav {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+
+	.fav-content {
+		width: 500px;
+	}
+
+	.fav-content .desc-mie {
+		font-size: 10.5px;
+	}
+
+	.reg-content {
+		width: 85%;
+		margin: 3px;
+	}
+
+	.desc-mie-reg {
+		font-size: 10.5px;
+	}
+
+	.button-order {
+		text-align: center;
+	}
+
+	.button-order a {
+		font-size: 10px;
+	}
+
+	.text {
+		display: none;
+	}
+
+	.cart {
+		display: block;
 	}
 }
 /* END RESPONSIVE */
