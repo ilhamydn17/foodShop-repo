@@ -101,7 +101,7 @@ nav {
 }
 .cover {
 	width: 98.8%;
-	background-image: url('../img/sampul.jpg');
+	background-image: url('./img/sampul.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
